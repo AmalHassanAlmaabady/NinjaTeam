@@ -26,9 +26,9 @@ class noteCell: UITableViewCell {
                // layer.shadowOffset = CGSize(width: 0, height: 0)
                // layer.shadowColor = UIColor.black.cgColor
         contentView.backgroundColor = .clear
-                contentView.layer.cornerRadius = 16
+        contentView.layer.cornerRadius = 8
         
-       contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

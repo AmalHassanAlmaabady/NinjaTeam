@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="Ajr-2j-01P">
             <objects>
-                <viewController id="bor-8c-mGe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="deletedNotes" id="bor-8c-mGe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FQe-8c-6fd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,34 +43,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv2-lS-xRd">
-                                                    <rect key="frame" x="40" y="11" width="221" height="34"/>
+                                                    <rect key="frame" x="42" y="11" width="219" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="u5q-gb-wiq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.1147689819" green="0.322052002" blue="0.3229064941" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyr-Wv-rtM">
-                                                    <rect key="frame" x="40" y="53" width="269" height="24"/>
+                                                    <rect key="frame" x="42" y="53" width="267" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="M6r-bP-3HL"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.1147689819" green="0.322052002" blue="0.3229064941" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aw-eF-twp">
                                                     <rect key="frame" x="287" y="15" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.11476898193359375" green="0.322052001953125" blue="0.322906494140625" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.978515625" green="0.9775390625" blue="0.9091796875" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                             <constraints>
-                                                <constraint firstItem="Xyr-Wv-rtM" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="20" id="DuT-Py-Hbb"/>
-                                                <constraint firstItem="Mv2-lS-xRd" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="20" id="F7v-4A-zop"/>
+                                                <constraint firstItem="Xyr-Wv-rtM" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="22" id="DuT-Py-Hbb"/>
+                                                <constraint firstItem="Mv2-lS-xRd" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="22" id="F7v-4A-zop"/>
                                                 <constraint firstItem="7aw-eF-twp" firstAttribute="trailing" secondItem="6pb-hu-44S" secondAttribute="trailingMargin" constant="4" id="P6P-fh-WQe"/>
                                                 <constraint firstItem="Mv2-lS-xRd" firstAttribute="top" secondItem="6pb-hu-44S" secondAttribute="topMargin" id="ej1-W8-68M"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xyr-Wv-rtM" secondAttribute="trailing" constant="16" id="fAn-5G-8Aj"/>
@@ -99,8 +99,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Notes" id="qg8-17-Emi">
-                        <barButtonItem key="leftBarButtonItem" image="trash" catalog="system" id="4SE-lm-cBU"/>
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="hRf-vM-rbk"/>
+                        <barButtonItem key="leftBarButtonItem" image="trash" catalog="system" id="4SE-lm-cBU">
+                            <color key="tintColor" red="0.1147689819" green="0.322052002" blue="0.3229064941" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                            <connections>
+                                <action selector="viewDeletedNotes:" destination="BYZ-38-t0r" id="kuP-ER-yeE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="hRf-vM-rbk">
+                            <color key="tintColor" red="0.1147689819" green="0.322052002" blue="0.3229064941" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                            <connections>
+                                <action selector="addNote:" destination="BYZ-38-t0r" id="ARx-tU-LWj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="notesTable" destination="kIv-Pf-OEi" id="7Y2-X3-Uo4"/>
@@ -113,7 +123,7 @@
         <!--View Controller-->
         <scene sceneID="5kg-Jg-gMr">
             <objects>
-                <viewController id="wzK-2k-cKW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editOrAddNote" id="wzK-2k-cKW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nNd-7B-4Ei">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

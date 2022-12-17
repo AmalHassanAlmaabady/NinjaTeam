@@ -24,12 +24,23 @@ class notesTableView: UIViewController{
         notesTable.reloadData()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func addNote(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let editOrAddNoteVC = storyBoard.instantiateViewController(withIdentifier: "editOrAddNote")
+        navigationController?.pushViewController(editOrAddNoteVC, animated: true)    }
+    
+    
+    @IBAction func viewDeletedNotes(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let deletedNotesVC = storyBoard.instantiateViewController(withIdentifier: "deletedNotes")
+        navigationController?.pushViewController(deletedNotesVC, animated: true)
+    }
+    
 }
 extension notesTableView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         notesTable.rowHeight = 100
-        
-       
         return 3
        // return notes.count
     }
@@ -48,12 +59,12 @@ extension notesTableView: UITableViewDelegate, UITableViewDataSource{
         let edit = UIContextualAction(style: .normal, title: "Edit") {(action, view, compeletionHandler) in
            
         }
-        edit.backgroundColor = .systemGreen
+        edit.backgroundColor = .systemIndigo
         
         let delete = UIContextualAction(style: .normal, title: "Delete") {(action, view, compeletionHandler) in
            
         }
-        delete.backgroundColor = .red
+        delete.backgroundColor = .systemRed
         
         let swip = UISwipeActionsConfiguration(actions: [edit, delete])
         return swip
