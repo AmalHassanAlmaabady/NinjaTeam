@@ -8,20 +8,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Notes Table View-->
         <scene sceneID="Ajr-2j-01P">
             <objects>
-                <viewController id="bor-8c-mGe" sceneMemberID="viewController">
+                <viewController id="bor-8c-mGe" customClass="notesTableView" customModule="CRUDActivity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FQe-8c-6fd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-hy-ChQ">
+                                <rect key="frame" x="4" y="63" width="385" height="751"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="deleteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hQI-Dk-grA">
+                                        <rect key="frame" x="0.0" y="50" width="385" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQI-Dk-grA" id="QmY-FP-5sY">
+                                            <rect key="frame" x="0.0" y="0.0" width="385" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="q8y-ky-VSq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q8y-ky-VSq" firstAttribute="trailing" secondItem="Bh9-hy-ChQ" secondAttribute="trailing" constant="4" id="EZ7-wj-4Ft"/>
+                            <constraint firstItem="Bh9-hy-ChQ" firstAttribute="top" secondItem="q8y-ky-VSq" secondAttribute="top" constant="4" id="YvG-qr-meK"/>
+                            <constraint firstItem="q8y-ky-VSq" firstAttribute="bottom" secondItem="Bh9-hy-ChQ" secondAttribute="bottom" constant="4" id="bkv-gJ-blm"/>
+                            <constraint firstItem="Bh9-hy-ChQ" firstAttribute="leading" secondItem="q8y-ky-VSq" secondAttribute="leading" constant="4" id="raF-47-yI9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KtG-Nl-fZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="-677"/>
+            <point key="canvasLocation" x="973" y="-717"/>
         </scene>
         <!--Notes-->
         <scene sceneID="tne-QT-ifu">
@@ -68,7 +90,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yS4-pk-DYV">
                                 <rect key="frame" x="4" y="139" width="385" height="675"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -16,6 +16,7 @@
 		035D9CE7294D094D00B962E2 /* CRUDActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D9CE6294D094D00B962E2 /* CRUDActivityTests.swift */; };
 		035D9CF1294D094D00B962E2 /* CRUDActivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D9CF0294D094D00B962E2 /* CRUDActivityUITests.swift */; };
 		035D9CF3294D094D00B962E2 /* CRUDActivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D9CF2294D094D00B962E2 /* CRUDActivityUITestsLaunchTests.swift */; };
+		4F2B0825294DEDC4005F073B /* deleteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B0824294DEDC4005F073B /* deleteTableView.swift */; };
 		B1C2EE55294DD3AC006785B4 /* notesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1C2EE53294DD3AC006785B4 /* notesModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		035D9CEC294D094D00B962E2 /* CRUDActivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRUDActivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		035D9CF0294D094D00B962E2 /* CRUDActivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDActivityUITests.swift; sourceTree = "<group>"; };
 		035D9CF2294D094D00B962E2 /* CRUDActivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDActivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F2B0824294DEDC4005F073B /* deleteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteTableView.swift; sourceTree = "<group>"; };
 		B1C2EE54294DD3AC006785B4 /* notesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notesModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			children = (
 				035D9CCF294D094900B962E2 /* AppDelegate.swift */,
 				035D9CD1294D094900B962E2 /* SceneDelegate.swift */,
+				4F2B0824294DEDC4005F073B /* deleteTableView.swift */,
 				035D9CD3294D094900B962E2 /* notesTableView.swift */,
 				035D9CD5294D094900B962E2 /* Main.storyboard */,
 				035D9CD8294D094C00B962E2 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 				035D9CD4294D094900B962E2 /* notesTableView.swift in Sources */,
 				B1C2EE55294DD3AC006785B4 /* notesModel.xcdatamodeld in Sources */,
 				035D9CD0294D094900B962E2 /* AppDelegate.swift in Sources */,
+				4F2B0825294DEDC4005F073B /* deleteTableView.swift in Sources */,
 				035D9CD2294D094900B962E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
