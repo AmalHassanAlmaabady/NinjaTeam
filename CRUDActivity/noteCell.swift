@@ -18,15 +18,17 @@ class noteCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+       //contentView.backgroundColor = UIColor(patternImage: (UIImage(named: "cc")!))
+        backgroundView = UIImageView(image: UIImage(named: "111"))
         layer.masksToBounds = false
-                //layer.shadowOpacity = 0.20
+            //layer.shadowOpacity = 0.20
                // layer.shadowRadius = 16
                // layer.shadowOffset = CGSize(width: 0, height: 0)
                // layer.shadowColor = UIColor.black.cgColor
-                
+        contentView.backgroundColor = .clear
                 contentView.layer.cornerRadius = 16
         
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
+       contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

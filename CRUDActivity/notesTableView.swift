@@ -15,7 +15,8 @@ class notesTableView: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "backG")!))
+        self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "bb")!))
+        
         self.notesTable.backgroundColor = .clear
         print("Hi ninjas mmmmm ")
         notesTable.dataSource = self

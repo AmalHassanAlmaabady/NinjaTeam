@@ -43,7 +43,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv2-lS-xRd">
-                                                    <rect key="frame" x="36" y="11" width="225" height="34"/>
+                                                    <rect key="frame" x="40" y="11" width="221" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="u5q-gb-wiq"/>
                                                     </constraints>
@@ -52,7 +52,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyr-Wv-rtM">
-                                                    <rect key="frame" x="36" y="53" width="273" height="24"/>
+                                                    <rect key="frame" x="40" y="53" width="269" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="M6r-bP-3HL"/>
                                                     </constraints>
@@ -69,8 +69,8 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.978515625" green="0.9775390625" blue="0.9091796875" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                             <constraints>
-                                                <constraint firstItem="Xyr-Wv-rtM" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="16" id="DuT-Py-Hbb"/>
-                                                <constraint firstItem="Mv2-lS-xRd" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="16" id="F7v-4A-zop"/>
+                                                <constraint firstItem="Xyr-Wv-rtM" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="20" id="DuT-Py-Hbb"/>
+                                                <constraint firstItem="Mv2-lS-xRd" firstAttribute="leading" secondItem="6pb-hu-44S" secondAttribute="leadingMargin" constant="20" id="F7v-4A-zop"/>
                                                 <constraint firstItem="7aw-eF-twp" firstAttribute="trailing" secondItem="6pb-hu-44S" secondAttribute="trailingMargin" constant="4" id="P6P-fh-WQe"/>
                                                 <constraint firstItem="Mv2-lS-xRd" firstAttribute="top" secondItem="6pb-hu-44S" secondAttribute="topMargin" id="ej1-W8-68M"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xyr-Wv-rtM" secondAttribute="trailing" constant="16" id="fAn-5G-8Aj"/>
