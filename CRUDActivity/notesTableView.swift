@@ -4,7 +4,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class notesTableView: UITableViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,7 +12,5 @@ class ViewController: UIViewController {
         print("Hi ninjas mmmmm ")
         // Do any additional setup after loading the view.
     }
-
-
 }
 
